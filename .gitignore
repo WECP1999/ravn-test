@@ -194,3 +194,6 @@ sketch
 # Ignore all local history of files
 .history
 .ionide
+
+yarn.lock
+package-lock.json
