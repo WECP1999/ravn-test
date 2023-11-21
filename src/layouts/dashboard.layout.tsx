@@ -1,10 +1,13 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import { Body, Layout, Nav } from './styles/style';
 
 const DashboardLayout = () => {
   return (
     <Layout>
-      <Nav>Soy el nav</Nav>
+      <Nav>
+        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/my-tasks">My tasks</Link>
+      </Nav>
       <Body>
         <Outlet />
       </Body>
