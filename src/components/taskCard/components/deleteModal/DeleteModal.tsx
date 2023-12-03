@@ -21,10 +21,12 @@ const DeleteModal = ({ show, onClose, task, refetch }: DeleteModalProps) => {
 
   const handleDeleteTask = useCallback(async () => {
     try {
-      const response = await deleteTask({ variables: { id: task.id } });
+      const response = await deleteTask({
+        variables: { deleteTaskInput: { id: task.id } },
+      });
 
       if (!response.errors && refetch) {
-        toast.success('The selected task have been deleted!')
+        toast.success('The selected task have been deleted!');
         refetch();
         onClose();
         return;
@@ -51,7 +53,12 @@ const DeleteModal = ({ show, onClose, task, refetch }: DeleteModalProps) => {
         </div>
 
         <div tw="w-full flex flex-row gap-4 justify-end">
-          <Button typeButton="text" onClick={onClose}>Cancel</Button>
+          <Button
+            typeButton="text"
+            onClick={onClose}
+          >
+            Cancel
+          </Button>
           <Button onClick={handleDeleteTask}>
             {loading ? (
               <div tw="mx-auto aspect-square h-full max-h-[20px] w-5 min-w-[20px] max-w-[20px] animate-spin rounded-full border-4 border-r-neutral-1" />
