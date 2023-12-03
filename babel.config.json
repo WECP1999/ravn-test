@@ -1,3 +1,8 @@
 {
-  "presets": ["@babel/preset-typescript", "@babel/preset-env", "@babel/preset-react"]
+  "plugins": ["babel-plugin-transform-vite-meta-env"],
+  "presets": [
+    "@babel/preset-typescript",
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
 }

@@ -24,5 +24,7 @@ export default {
   },
   transform: {
     '^.+\\.(js|jsx|ts|tsx|mjs)$': ['babel-jest', babelConfigStyledComponents],
+    '.+\\.(css|less|sass|scss|png|jpg|gif|ttf|woff|woff2|svg)$':
+      'jest-transform-stub',
   },
 };
