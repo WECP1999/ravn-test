@@ -17,9 +17,9 @@ Clone the repository and run the following command
 ### Commands
 Here are the commands you can run.
 
--`dev` Run the project in a test environment
--`test` Run tests without test coverage
--`lint` Execute the linter
+- `dev` Run the project in a test environment
+- `test` Run tests without test coverage
+- `lint` Execute the linter
 
 ## Project Description
 this challenge was created with the purpose of demonstrating my knowledge in react, without using frameworks like Next or Gatsby, to show my technical skills working without a previous settup. Creating components and utilities from 0 with the help of libraries like: [styled-components]`https://styled-components.com`, [tailwind]`https://tailwindcss.com`, [twin.macro]`https://github.com/ben-rogerson/twin.macro`, [react-router]`https://reactrouter.com/en/main` and [context]`https://react.dev/learn/scaling-up-with-reducer-and-context`,as the main libraries.
